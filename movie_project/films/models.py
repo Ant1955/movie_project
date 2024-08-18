@@ -11,7 +11,7 @@ class News_post(models.Model):
     text = models.TextField('Описание фильма')
     responce1 = models.TextField('Популярный отзыв')
     responce2 = models.TextField('Отрицательный отзыв')
-    raiting = models.CharField('Рейтинг', max_length=200)
+    raiting = models.CharField('Рейтинг', max_length=50)
 
     def __str__(self):
         return self.title
