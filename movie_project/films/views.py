@@ -7,10 +7,10 @@ from .forms import News_postForm
 
 # Create your views here.
 def index(request):
-	news = News_post.objects.all()
-	return render(request, 'films/index.html', {'news': news})
-def films(request):
 
+	return render(request, 'films/index.html')
+def films(request):
+	news = News_post.objects.all()
 	return render(request, 'films/films.html', {'news': news})
 
 def add_film(request):
