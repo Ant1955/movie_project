@@ -1,9 +1,6 @@
 from django.db import models
 
 # Create your models here.
-from django.db import models
-
-# Create your models here.
 
 class News_post(models.Model):
     title = models.CharField('Название фильма', max_length=50)
